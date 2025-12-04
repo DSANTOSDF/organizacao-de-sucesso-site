@@ -1,4 +1,572 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Personal Organizer Noroeste Brasília | Pós-Mudança | Organização de Sucesso</title>
+  <meta name="description" content="Personal Organizer no Noroeste/Brasília. 9 anos de experiência em pós-mudança. Organização completa de closets, cozinhas e casas. Atendimento premium. WhatsApp: (61) 99878-5588.">
+  <meta name="language" content="pt-BR">
+  <meta property="og:title" content="Personal Organizer Noroeste Brasília | Pós-Mudança | Organização de Sucesso">
+  <meta property="og:description" content="Personal Organizer no Noroeste/Brasília. 9 anos de experiência em pós-mudança. Organização completa de closets, cozinhas e casas. Atendimento premium. WhatsApp: (61) 99878-5588.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Personal Organizer Noroeste Brasília | Pós-Mudança | Organização de Sucesso">
+  <meta name="twitter:description" content="Personal Organizer no Noroeste/Brasília. 9 anos de experiência em pós-mudança. Organização completa de closets, cozinhas e casas. Atendimento premium. WhatsApp: (61) 99878-5588.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: #fffaf4;
+      color: #2b2b2b;
+      line-height: 1.5;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #fffaf4ee;
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #f0e2d2;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      border: 2px solid #d3a866;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #d3a866;
+      font-weight: 700;
+    }
+
+    .logo-text-main {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #b38a4a;
+    }
+
+    .logo-text-sub {
+      font-size: 12px;
+      color: #7a6a55;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #b38a4a;
+    }
+
+    .btn-primary,
+    .btn-outline {
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #d3a866;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background: #c49445;
+    }
+
+    .btn-outline {
+      border: 1px solid #d3a866;
+      color: #d3a866;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: #fff2df;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 40px 0 40px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: center;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      color: #7a6a55;
+      border: 1px solid #f0e2d2;
+      margin-bottom: 16px;
+    }
+
+    .pill span.star {
+      background: #ffe9b8;
+      border-radius: 999px;
+      padding: 4px 9px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #8b640e;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+      color: #2b2b2b;
+    }
+
+    .hero h1 span {
+      color: #b38a4a;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      color: #b0702f;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .hero p {
+      font-size: 14px;
+      margin-bottom: 22px;
+      color: #5a5244;
+      max-width: 460px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: #7a6a55;
+    }
+
+    .hero-badges span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-badges span::before {
+      content: "•";
+      color: #d3a866;
+      font-weight: 700;
+    }
+
+    .hero-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: 0 20px 35px rgba(0,0,0,0.08);
+    }
+
+    .hero-photo {
+      height: 170px;
+      border-radius: 18px;
+      background-image: linear-gradient(120deg,#fbe2c7,#f1d4c0);
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 18px;
+      color: #4a3c2d;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .testimonial {
+      margin-top: 14px;
+      background: #fffaf4;
+      border-radius: 14px;
+      padding: 12px 14px;
+      border: 1px solid #f0e2d2;
+      font-size: 13px;
+    }
+
+    .rating {
+      color: #f3b100;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .testimonial small {
+      display: block;
+      margin-top: 6px;
+      color: #7a6a55;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 26px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      font-size: 22px;
+      margin-bottom: 4px;
+      color: #2b2b2b;
+    }
+
+    .section-title p {
+      font-size: 14px;
+      color: #7a6a55;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid #f0e2d2;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: #3b3427;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #716656;
+    }
+
+    .card ul {
+      margin-top: 8px;
+      padding-left: 18px;
+      font-size: 13px;
+      color: #716656;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 26px;
+      align-items: center;
+    }
+
+    .about-photo {
+      border-radius: 20px;
+      background-image: linear-gradient(135deg,#f9dfc4,#f5d1c0);
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6c5032;
+      font-weight: 600;
+      text-align: center;
+      padding: 18px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 34px 18px;
+      border-radius: 24px;
+      background: #f7e4ce;
+      margin-bottom: 30px;
+    }
+
+    .cta h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .cta p {
+      font-size: 14px;
+      margin-bottom: 16px;
+      color: #5f5546;
+    }
+
+    footer {
+      border-top: 1px solid #f0e2d2;
+      padding: 18px 0 28px;
+      font-size: 12px;
+      color: #7a6a55;
+    }
+
+    footer .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 26px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+      z-index: 50;
+    }
+
+    @media (max-width: 800px) {
+      .hero-grid, .about {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding-top: 20px;
+      }
+      header {
+        position: static;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="logo-title">
+          <div class="logo-box">OS</div>
+          <div>
+            <div class="logo-text-main">Organização de Sucesso</div>
+            <div class="logo-text-sub">Brasília | Noroeste – Michelle Madeira</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <button class="btn-primary" onclick="window.location.href='https://wa.me/5561998785588?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+de+organiza%C3%A7%C3%A3o.'">Agendar Consulta</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="pill">
+            <span class="star">⭐ 5,0 no Google</span>
+            <span>Personal Organizer Brasília | Noroeste</span>
+          </div>
+
+          <h1>Personal Organizer no <span>Noroeste – Brasília</span></h1>
+          <div class="hero-sub">Especialista em Pós-Mudança | 9 Anos de Experiência</div>
+          <p>
+            Transformamos sua casa recém-mudada em um lar funcional, organizado e harmonioso — em 1 ou poucos dias, com atendimento premium e equipe especializada.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="window.location.href='https://wa.me/5561998785588?text=Ol%C3%A1%2C+gostaria+de+organizar+minha+casa+no+Noroeste.'">Quero Organizar Minha Casa</button>
+            <button class="btn-outline" onclick="document.getElementById('servicos').scrollIntoView({behavior:'smooth'})">Ver Serviços</button>
+          </div>
+
+          <div class="hero-badges">
+            <span>Atendimento 24 horas</span>
+            <span>9 anos de experiência</span>
+            <span>Noroeste, Brasília</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-photo">
+            Organização de pós-mudança para sua casa no Noroeste.
+          </div>
+          <div class="testimonial" id="depoimentos">
+            <div class="rating">★★★★★</div>
+            <p>“Muito bom, excelente serviço e resultado, recomendo.”</p>
+            <small>— Deborah Achcar</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+      <div class="container">
+        <div class="section-title">
+          <h2>Serviços de Organização Profissional</h2>
+          <p>Soluções completas para transformar seu espaço em um ambiente funcional e harmonioso.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Pós-Mudança Completa</h3>
+            <p>Organização total da casa após a mudança, do desembalar ao lugar perfeito de cada item.</p>
+            <ul>
+              <li>Desembalar caixas e categorizar tudo</li>
+              <li>Organização de todos os ambientes principais</li>
+              <li>Casa pronta para morar em poucos dias</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Closets e Quartos</h3>
+            <p>Visual limpo, funcional e fácil de manter no dia a dia.</p>
+            <ul>
+              <li>Dobras profissionais e cabides padronizados</li>
+              <li>Setorização por tipo, cor e uso</li>
+              <li>Melhor aproveitamento do espaço</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Cozinha e Despensa</h3>
+            <p>Fluxo inteligente para cozinhar e manter tudo em ordem.</p>
+            <ul>
+              <li>Organização de louças, panelas e mantimentos</li>
+              <li>Uso de cestos, potes e colmeias (opcional)</li>
+              <li>Otimizamos o que você já tem em casa</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Ambientes Infantis</h3>
+            <p>Quartos de crianças e brinquedotecas organizadas com lógica e praticidade.</p>
+            <ul>
+              <li>Sistema de categorias simples</li>
+              <li>Rotina visual para a família inteira</li>
+              <li>Facilidade na hora de guardar e encontrar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="container about">
+        <div>
+          <div class="section-title" style="text-align:left;margin-bottom:10px;">
+            <h2>Sobre Michelle Madeira</h2>
+            <p>Organização de Sucesso – Brasília | Noroeste</p>
+          </div>
+          <p style="font-size:14px;color:#5a5244;margin-bottom:10px;">
+            Sou Michelle Madeira, Personal Organizer há 9 anos, especializada em pós-mudança em Brasília, com foco no bairro Noroeste.
+          </p>
+          <p style="font-size:14px;color:#5a5244;margin-bottom:10px;">
+            Meu trabalho é transformar o caos da mudança em um lar funcional, bonito e leve. Você não precisa se preocupar com caixas, pilhas de roupas ou bagunça: eu e minha equipe cuidamos de tudo com carinho e profissionalismo.
+          </p>
+          <p style="font-size:14px;color:#5a5244;margin-bottom:14px;">
+            Cada projeto é personalizado de acordo com sua rotina, espaço e prioridades. O objetivo é que a organização faça sentido para você e seja fácil de manter no dia a dia.
+          </p>
+          <button class="btn-primary" onclick="window.location.href='https://wa.me/5561998785588?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+de+organiza%C3%A7%C3%A3o.'">
+            Falar com a Michelle no WhatsApp
+          </button>
+        </div>
+
+        <div class="about-photo">
+          Espaços reais, vida real e organização pensada para a rotina da sua família no Noroeste.
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section>
+      <div class="container">
+        <div class="cta">
+          <h2>Pronta para ver sua casa organizada de verdade?</h2>
+          <p>
+            Clique abaixo e fale diretamente com a Michelle pelo WhatsApp para solicitar um orçamento de pós-mudança ou organização completa no Noroeste – Brasília.
+          </p>
+          <button class="btn-primary" onclick="window.location.href='https://wa.me/5561998785588?text=Ol%C3%A1%2C+vi+seu+site+e+quero+um+or%C3%A7amento+de+organiza%C3%A7%C3%A3o.'">
+            Chamar no WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5561998785588?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+de+organiza%C3%A7%C3%A3o." target="_blank" aria-label="WhatsApp">
+    ☎
+  </a>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        Organização de Sucesso – Noroeste Brasília<br/>
+        Personal Organizer | Pós-Mudança
+      </div>
+      <div>
+        WhatsApp: (61) 99878-5588<br/>
+        Site hospedado gratuitamente via GitHub Pages.
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
