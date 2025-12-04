@@ -146,20 +146,9 @@
       box-shadow:var(--shadow);
       padding:0.7rem;
     }
-    .hero-photo-inner{
+    .hero-photo-inner img{
+      width:100%;
       border-radius:22px;
-      overflow:hidden;
-      background:#f5e4d1;
-      min-height:240px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-    .hero-photo-inner span{
-      font-size:0.85rem;
-      color:var(--muted);
-      padding:1rem;
-      text-align:center;
     }
 
     section{
@@ -192,66 +181,6 @@
       font-size:0.98rem;
       margin-bottom:0.4rem;
       color:var(--text);
-    }
-
-    .steps-list{
-      list-style:none;
-      counter-reset:step;
-    }
-    .steps-list li{
-      counter-increment:step;
-      margin-bottom:0.5rem;
-      display:flex;
-      gap:0.6rem;
-    }
-    .steps-list li::before{
-      content:counter(step);
-      width:20px;
-      height:20px;
-      border-radius:999px;
-      background:#fff2dd;
-      color:var(--primary-dark);
-      font-size:0.8rem;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      margin-top:0.1rem;
-      font-weight:600;
-    }
-
-    .tags{
-      display:flex;
-      flex-wrap:wrap;
-      gap:0.45rem;
-      font-size:0.8rem;
-      margin-top:0.4rem;
-    }
-    .tag-chip{
-      background:#fff;
-      border-radius:999px;
-      padding:0.25rem 0.7rem;
-      border:1px solid rgba(0,0,0,0.04);
-    }
-
-    .testimonial{
-      font-size:0.86rem;
-    }
-    .stars{color:#f5b301;margin-bottom:0.3rem;font-size:0.9rem;}
-    .testimonial-name{
-      margin-top:0.4rem;
-      font-weight:500;
-      font-size:0.85rem;
-      color:var(--text);
-    }
-
-    .final-cta{
-      text-align:center;
-      padding:2rem 0 2.5rem;
-    }
-    .final-cta p{
-      font-size:0.9rem;
-      color:var(--muted);
-      margin:0.4rem 0 1rem;
     }
 
     footer{
@@ -309,7 +238,6 @@
 
   <main>
 
-    <!-- HERO / TOPO -->
     <section class="hero">
       <div class="container hero-grid">
 
@@ -338,116 +266,15 @@
             <span class="icon">📲</span>
             <span>Chamar no WhatsApp</span>
           </a>
-
-          <div class="hero-note">
-            Respondo pessoalmente de segunda a sexta, em horário comercial.
-          </div>
         </div>
 
+        <!-- FOTO INSERIDA -->
         <div class="hero-photo">
           <div class="hero-photo-inner">
-            <span>
-              Aqui depois vamos colocar uma foto sua bem linda.
-              Por enquanto a página já funciona normalmente.
-            </span>
+            <img src="assets/IMG_2644.JPG" alt="Michelle Madeira - Personal Organizer">
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- COMO FUNCIONA -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">Como funciona</h2>
-        <p class="section-sub">
-          Processo simples e direto para você não se preocupar com a bagunça da mudança.
-        </p>
-
-        <div class="card">
-          <ul class="steps-list">
-            <li>
-              <div>
-                <strong>1. Você me chama no WhatsApp.</strong><br>
-                Me conta se é apartamento ou casa, o tamanho aproximado e a data da mudança.
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>2. Definimos o plano ideal.</strong><br>
-                Avalio a quantidade de coisas e indico quantos dias de organização são necessários.
-              </div>
-            </li>
-            <li>
-              <div>
-                <strong>3. Dia da organização.</strong><br>
-                Eu e minha equipe desembalamos, categorizamos e organizamos tudo. 
-                Você já dorme na casa nova com tudo no lugar.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- O QUE EU ORGANIZO -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">O que organizo para você</h2>
-        <p class="section-sub">
-          Cuidamos dos ambientes principais para a casa ficar funcional desde o primeiro dia.
-        </p>
-
-        <div class="cards cards-3">
-          <div class="card">
-            <h3>Pós-mudança completa</h3>
-            <p>Organização geral da casa após a mudança, priorizando ambientes de uso diário.</p>
-          </div>
-
-          <div class="card">
-            <h3>Closets e quartos</h3>
-            <p>Roupas, sapatos e acessórios com lógica, praticidade e beleza.</p>
-          </div>
-
-          <div class="card">
-            <h3>Cozinha, despensa e infantil</h3>
-            <p>Fluxo inteligente para cozinhar, armazenar alimentos e organizar brinquedos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DEPOIMENTO -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">O que dizem as clientes</h2>
-
-        <div class="card testimonial">
-          <div class="stars">★★★★★</div>
-          <p>
-            “Muito bom, excelente serviço e resultado, recomendo. Minha casa ficou
-            funcional, bonita e fácil de manter organizada depois da mudança.”
-          </p>
-          <div class="testimonial-name">Deborah Achcar</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="final-cta">
-      <div class="container">
-        <h2 class="section-title">Quer uma pós-mudança leve no Noroeste?</h2>
-        <p>
-          Me manda uma mensagem agora mesmo e eu te ajudo a escolher a melhor opção de organização
-          para a sua casa.
-        </p>
-
-        <a class="btn-whats"
-           href="https://wa.me/5561998785588?text=Ol%C3%A1%20Michelle,%20quero%20um%20or%C3%A7amento%20de%20organiza%C3%A7%C3%A3o%20p%C3%B3s-mudan%C3%A7a%20no%20Noroeste."
-           target="_blank">
-          <span class="icon">💬</span>
-          <span>Falar com a Michelle</span>
-        </a>
       </div>
     </section>
 
